@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Clase 4 - JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="elementoTitulo">Tipos de datos</h1>
+
+        <p id="parrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam voluptatum vel quam,
+            similique
+        </p>
+        <label for="txtDate">Año</label><br>
+        <input type="text" name="txtDate" id="txtDate">
+        <button id="btnCargarFecha" type="button" onclick="alert('Hola desde el boton');">Cargar fecha</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- DOMcontentLoaded Solo espera a que se termine de cargar el dom, no imagenes ni elementos externos -->
+    <!-- window Espera hasta que cargue toda la pagina con imagenes y contenido
+    window.addEventListener('load',) -->
+
+
+    <script>
+
+        var array1 = ['Augusto', 'Pedro', 'Juan'];
+        //alert('Hola y bienvenido a la clase ' + array1[0]);
+        //alert('Hola y bienvenido a la clase ' + array1[1]);
+        //alert('Hola y bienvenido a la clase ' + array1[2]);
+
+        // for(var i=0;i<array1.length;i++){
+        //     console.log(i); //para saber en que iteracion estamos
+        //    alert('Hola y buenvenido a la clase '+array1[i]);
+        // }
+
+        //for (var item of array1) {
+        //  alert('Hola y buenvenido a la clase ' + array1[i]);
+        // }
+
+        var array2 = ['Augusto', 31, true];
+        for (var j = 0; j < array2.length; j++) {
+            console.log(j); //para saber en que iteracion estamos
+            alert('Hola y buenvenido a la clase ' + array2[j]);
+        }
+
+    </script>
+</body>
+
+</html>
